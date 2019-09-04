@@ -14,20 +14,17 @@ function Banner() {
                   <h1 className="text-uppercase">I am Shawon</h1>
                   <h5 className="text-uppercase">Freelancer Web Developer</h5>
                   <div className="social_icons my-5">
-                    <a href="#">
+                    <a href="https://www.facebook.com/islamshawon71">
+                      <i className="ti-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/IslamShawon1993">
                       <i className="ti-twitter"></i>
                     </a>
-                    <a href="#">
+                    <a href="skype:shawon714?add">
                       <i className="ti-skype"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/dev.shawon/">
                       <i className="ti-instagram"></i>
-                    </a>
-                    <a href="#">
-                      <i className="ti-dribbble"></i>
-                    </a>
-                    <a href="#">
-                      <i className="ti-vimeo"></i>
                     </a>
                   </div>
                   <AnchorLink

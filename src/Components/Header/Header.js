@@ -47,11 +47,11 @@ function Header(props) {
                       Portfolio
                     </NavLink>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <NavLink exact className="nav-link" to="/blog">
                       Blog
                     </NavLink>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
                     <NavLink exact className="nav-link" to="/services">
                       Services
@@ -63,7 +63,7 @@ function Header(props) {
                     </NavLink>
                   </li>
                   <li className="nav-item hire-me-button">
-                    <a className="primary_btn " href="#">
+                    <a className="primary_btn " href="/contact">
                       <span>Hire Me</span>
                     </a>
                   </li>

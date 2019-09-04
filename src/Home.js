@@ -6,6 +6,7 @@ import Features from "./Components/Features/Features";
 import Testimonial from "./Components/Testimonial/Testimonial";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Blog from "./Components/Blog/Blog";
+import Brand from "./Components/Brand/Brand";
 import Footer from "./Components/Footer/Footer";
 
 function Home() {
@@ -17,7 +18,8 @@ function Home() {
       <Features />
       <Testimonial />
       <Portfolio />
-      <Blog />
+      {/* <Blog /> */}
+      <Brand />
       <Footer />
     </React.Fragment>
   );

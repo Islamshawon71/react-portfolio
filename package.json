@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "isotope-layout": "^3.0.6",
     "jquery": "^3.4.1",
     "react": "^16.9.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
@@ -16,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "stop": "node server.stop.js"
   },
   "eslintConfig": {
     "extends": "react-app"

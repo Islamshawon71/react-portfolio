@@ -9,7 +9,34 @@
 		  Navbar 
 		-------------------------------------------------------------------------------*/
 
-
+ function brandFun (){
+	$(".brand-carousel").owlCarousel({
+		items: 1,
+		autoplay: false,
+		loop: true,
+		nav: false,
+		margin: 30,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			420: {
+				items: 1,
+			},
+			480: {
+				items: 3,
+			},
+			768: {
+				items: 3,
+			},
+			992: {
+				items: 5,
+			}
+		}
+	});
+ }
+ brandFun();
 
 		//* Navbar Fixed
 		function navbarFixed() {
@@ -31,6 +58,15 @@
             Isotope js Starts
          --------------------------------------------- */
 		$(window).on('load', function () {
+			if (document.getElementById('portfolio')) {
+				var $workGrid = $('.portfolio-grid').isotope({
+					itemSelector: '.all',
+					percentPosition: true,
+					masonry: {
+						columnWidth: '.grid-sizer'
+					}
+				});
+			}
 			$('.portfolio-filter ul li').on('click', function () {
 				$('.portfolio-filter ul li').removeClass('active');
 				$(this).addClass('active');
@@ -41,15 +77,7 @@
 				});
 			});
 
-			if (document.getElementById('portfolio')) {
-				var $workGrid = $('.portfolio-grid').isotope({
-					itemSelector: '.all',
-					percentPosition: true,
-					masonry: {
-						columnWidth: '.grid-sizer'
-					}
-				});
-			}
+			
 		});
 
 		/*----------------------------------------------------*/
@@ -70,12 +98,7 @@
 		/*----------------------------------------------------*/
 		/* counter js
 		/*----------------------------------------------------*/
-		if (document.getElementById("features_counter")) {
-			$('.counter').counterUp({
-				delay: 10,
-				time: 1000
-			});
-		}
+		
 
 		/*----------------------------------------------------*/
 		/*  Testimonials Slider
@@ -94,31 +117,7 @@
 		/*-------------------------------------------------------------------------------
     Brand Slider 
 	-------------------------------------------------------------------------------*/
-		$(".brand-carousel").owlCarousel({
-			items: 1,
-			autoplay: false,
-			loop: true,
-			nav: false,
-			margin: 30,
-			dots: false,
-			responsive: {
-				0: {
-					items: 1,
-				},
-				420: {
-					items: 1,
-				},
-				480: {
-					items: 3,
-				},
-				768: {
-					items: 3,
-				},
-				992: {
-					items: 5,
-				}
-			}
-		});
+		
 
 
 

@@ -5,6 +5,7 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
+import Services from "./Services";
 import { withRouter } from "react-router";
 
 class ScrollToTop extends Component {
@@ -30,6 +31,7 @@ function App() {
             <Route exact path="/about" component={About} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/services" component={Services} />
             {/* <Route exact path="/shop/:id" component={ItemDetails} /> */}
           </Switch>
         </Scroll>
